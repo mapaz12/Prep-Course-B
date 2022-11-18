@@ -57,7 +57,7 @@ function devolverString(str) {
     // Devuelve "true" si el argumento de la función "num" es menor que noventa
     // De lo contrario, devuelve "false"
     // Tu código:
-    if (num < 90) {return true} else {return false}
+    if (num < 90) {return true} else {return false;}
   }
   
   function mayorQueCincuenta(num) {
@@ -87,7 +87,7 @@ function devolverString(str) {
     // Devuelve "true" si "num" es impar
     // De lo contrario, devuelve "false"
     // Tu código:
-    if (num % 2 === 1) {return true}
+    if (num % 2 !== 0) {return true}
       else {return false}
   }
   
@@ -101,7 +101,9 @@ function devolverString(str) {
   function elevarAlCubo(num) {
     // Devuelve el valor de "num" elevado al cubo
     // Tu código:
-    return num * num * num
+    //return num * num * num
+
+    return Math.pow(num,3)
   }
   
   function elevar(num, exponent) {
@@ -137,9 +139,9 @@ function devolverString(str) {
     //Si el número es negativo, devolver ---> "Es negativo"
     //Si el número es 0, devuelve false
     // Tu código:
-    if (numero > 0) {return "Es positivo"}
-      if (numero < 0) {return 'Es negativo'}
-        if (numero === 0) {return false}
+    if (numero === 0) {return false}
+    else  if (numero < 0) {return 'Es negativo'}
+        else {return "Es positivo"}
 
   }
   
